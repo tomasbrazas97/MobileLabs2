@@ -22,7 +22,11 @@ function deleteTask(task: String) : number
     if (index > -1)
     {
         myArray.splice(index, 1);
+        console.log("Task has been deleted:" + task);
     }
-    console.log("Task has been deleted:" + task);
     return myArray.length;
 }
+
+addTask("test");
+listAllTasks();
+deleteTask("test");
